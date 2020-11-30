@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+	font-family: Roobert, Inter, Helvetica Neue, Helvetica, Arial, sans-serif;
+	color: #fff;
+}
+
+::selection {
+	background-color: #772ce8;
+	color: #fff;
+}
+
+::-webkit-scrollbar {
+	width:7px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #1f1f23;
+	border-radius:10px;
+	opacity: .7;
+	border: 1px solid hsla(0,0%,100%,.25);
+}
+

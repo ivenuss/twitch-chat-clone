@@ -1,0 +1,30 @@
+.message {
+	font-size: 13px;
+	padding: 5px 20px 5px 20px;
+	max-width: 100%;
+
+	overflow-wrap: break-word;
+  word-wrap: break-word;
+	hyphens: auto;
+}
+
+.message .time {
+	color: #adadb8;
+	margin-right: 5px;
+}
+
+.message .username {
+	font-weight: 700;
+	display: inline-block!important;
+}
+
+.message .separator {
+	padding-left: 2px;
+	padding-right: 5px;
+	font-weight: 700;
+	display: inline-block!important;
+}
+
+.message .message-fragment {
+	line-height: 20px;
+}
