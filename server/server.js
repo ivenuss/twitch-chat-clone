@@ -4,7 +4,7 @@ const app = express();
 const http = require("http").createServer(app);
 const io = require("socket.io")(http, {
   cors: {
-    origin: "http://venus.fakaheda.eu", // can't end with "/"
+    origin: "http://localhost:3000", // can't end with "/"
     credentials: true,
     methods: ["GET", "POST"],
   },
