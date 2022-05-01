@@ -1,7 +1,6 @@
 export const authEndpoint = "https://id.twitch.tv/oauth2/authorize";
-const redirectUri = "http://venus.fakaheda.eu/";
-//const redirectUri = "http://localhost:3000/";
-const clientId = "x5lc9ehi311twke8yrp2ije7532m4j";
+const redirectUri = "http://localhost:3000/";
+const clientId = process.env.CLIENT_ID;
 
 export const getTokenFromUrl = () => {
   return window.location.hash //pulling access token out from url

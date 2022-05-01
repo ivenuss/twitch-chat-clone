@@ -4,7 +4,7 @@ import { getTokenFromUrl } from "../twitch";
 function Auth({ setUser, setToken }) {
   const hash = getTokenFromUrl();
 
-  const fetchUser = (auth, clientId) => {
+  const fetchUser = async (auth, clientId) => {
     return fetch("https://api.twitch.tv/helix/users", {
       method: "GET",
       headers: {
@@ -20,7 +20,7 @@ function Auth({ setUser, setToken }) {
 
     if (_token) {
       setToken(_token);
-      fetchUser(_token, "x5lc9ehi311twke8yrp2ije7532m4j").then((w) => {
+      fetchUser(_token, process.env.CLIENT_ID).then((w) => {
         setUser(w);
       });
     }

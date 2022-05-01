@@ -4,7 +4,7 @@ const app = express();
 const http = require("http").createServer(app);
 const io = require("socket.io")(http, {
   cors: {
-    origin: "http://venus.fakaheda.eu", //nesmí končit "/"
+    origin: "http://venus.fakaheda.eu", // can't end with "/"
     credentials: true,
     methods: ["GET", "POST"],
   },
@@ -18,10 +18,6 @@ io.on("connection", (socket) => {
   });
 });
 
-/* app.get("/", (req, res) => {
-  res.send("Hello Worlds!");
-});
- */
 http.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });

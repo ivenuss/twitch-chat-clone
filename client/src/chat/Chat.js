@@ -4,8 +4,7 @@ import "./Chat.css";
 import io from "socket.io-client";
 import Message from "./Message";
 
-const socket = io.connect("https://twitch-chat-api.herokuapp.com/");
-//const socket = io.connect("http://localhost:4000/");
+const socket = io.connect("http://localhost:4000/");
 
 function Chat({ user }) {
   const [connected, setConnected] = useState(false);
