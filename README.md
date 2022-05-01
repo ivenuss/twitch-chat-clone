@@ -1,5 +1,15 @@
 # Twitch chat Clone
-This is my first project where I am using [socket.io](https://socket.io/) library and [twitch api](https://dev.twitch.tv/docs/api/) for authentication.
+
+## Description
+
+This was one of my first projects I made. I wanted to test out React + Socket.io together with NodeJS server.
+
+## Technologies
+
+- [React](https://reactjs.org/)
+- [Express](https://expressjs.com/)
+- [Socket.io](https://socket.io/)
+- [Twitch API](https://dev.twitch.tv/docs/api/)
 
 ## Web preview
 ![ddisp](https://i.imgur.com/wofWfQ1.png)
